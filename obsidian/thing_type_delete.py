@@ -1,14 +1,3 @@
----
-Class: 업무일지
-Project: DAMDA2.0
----
----
-- Portal 제품 정보 관리에서 유형 삭제 시 IoTCore에서 생기는 문제 해결 방법 인수인계
-	- 문제 : IoTCore에서 사물을 삭제 시킬 때는 비활성화가 먼저 진행 되고 5분 이후에 삭제가 가능함
-	- 해결 : DSIM에서 삭제 요청이 오면 비활성화 처리 후 일주일 마다 비활성화 된 사물 삭제 이벤트 추가
-1. Lambda에 해당 코드 업로드 (Python)
-2. EventBridge에서 1주일마다 호출 이벤트 설정
-```
 import boto3
 import logging
 from datetime import datetime, timezone, timedelta
@@ -79,6 +68,3 @@ if __name__ == "__main__":
             logger.info(f"Attempting to delete Thing Type: {thing_type_name}")
             result = delete_thing_type(thing_type_name, deprecation_date)
             logger.info(f"Thing Type {thing_type_name} deletion result: {result}")
-```
-
-![[thing_type_delete.py]]
