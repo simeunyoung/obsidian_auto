@@ -77,7 +77,17 @@ Class: 영어
 | 그는 21살이었니?     | Was he 21?      |
 ### - here 여기에
 
-
-| 한국어 문장 | 영어 문장 |
-| ------ | ----- |
-|        |       |
+| 한국어 문장          | 영어 문장               |
+| --------------- | ------------------- |
+| 그는 여기에 있어.      | He is here.         |
+| 그는 여기에 없어.      | He is not here.     |
+| 그는 여기에 있니?      | Is he here?         |
+| 그는 여기에 있었어.     | He was here.        |
+| 그는 여기에 있지 않았어.  | He was not here.    |
+| 그는 여기에 있었니?     | Was he here?        |
+| 그들은 여기에 있어.     | They are here.      |
+| 그들은 여기에 없어.     | They are not here.  |
+| 그들은 여기에 있니?     | Are they here?      |
+| 그들은 여기에 있었어.    | They were here.     |
+| 그들은 여기에 있지 않았어. | They were not here. |
+| 그들은 여기에 있었니?    | Ware they here?     |
