@@ -15,7 +15,9 @@
 *   **다운로드 링크:** `S3 Pre-signed URLs`
 *   **경량 작업/트리거:** `Lambda`
 *   **대용량 배치 작업:** `AWS Batch`
-*   **인증/권한:** `AWS IAM`/ `Amazon Cognito`
+*   **인증/권한:** 
+		`AWS IAM`: **리소스** (S3, Lambda, EC2, Aurora 등)에 접근하는 사람, 애플리케이션, 서비스.
+		`Amazon Cognito`: 애플리케이션의 최종 사용자를 위한 인증 및 권한 관리.
 
 ---
 
