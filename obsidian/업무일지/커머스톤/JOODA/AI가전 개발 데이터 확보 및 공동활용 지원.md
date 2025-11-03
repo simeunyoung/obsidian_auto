@@ -11,7 +11,7 @@
 #### **2. 핵심 AWS 서비스**
 *   **홈페이지/API:** `EC2`
 *   **메타데이터 DB:** `Aurora DB`
-*   **대용량 학습 데이터 저장:** `S3`
+*   **대용량 학습 데이터 저장:** `S3` [[S3 (Simple Storage Service) 활용]]
 *   **다운로드 링크:** `S3 Pre-signed URLs`
 *   **경량 작업/트리거:** `Lambda`
 *   **대용량 배치 작업:** `AWS Batch`
