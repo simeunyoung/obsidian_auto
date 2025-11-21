@@ -26,3 +26,6 @@ SmartThings
 
 퓨리움
 - [ ] 공기질 데이터 전처리 작업 
+
+Firebase
+- [ ] cuchen 결제 계정 추가
