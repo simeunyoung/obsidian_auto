@@ -34,3 +34,6 @@ SmartThings
 
 Firebase
 - [ ] cuchen 결제 계정 추가
+
+서버
+- [ ] 다중 이벤트 로직 개발
