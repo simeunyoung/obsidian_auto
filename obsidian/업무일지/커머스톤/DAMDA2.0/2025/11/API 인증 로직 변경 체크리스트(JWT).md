@@ -1,26 +1,91 @@
 
-| **#** | **Controller** | **Summary (API)**                | **Description**     | 필요  | 적용  |
-| ----- | -------------- | -------------------------------- | ------------------- | --- | --- |
-| User  |                |                                  |                     |     |     |
-| 1     | User           | **Join**                         | 회원 가입               | X   | ⬜   |
-| 2     | User           | **Withdrawal**                   | 회원 탈퇴               | O   | ⬜   |
-| 3     | User           | **Request TempKey**              | 임시 인증 번호 요청         | X   | ⬜   |
-| 4     | User           | **Verify TempKey**               | 임시인증번호 유효성 체크       | X   | ⬜   |
-| 5     | User           | **Find Id**                      | 아이디 찾기              | X   | ⬜   |
-| 6     | User           | **Reser Password**               | 비밀번호 초기화            | X   | ⬜   |
-| 7     | User           | **Duplicate Check**              | id, email, tel 중복확인 | X   | ⬜   |
-| 8     | User           | **Search User Info**             | 사용자 정보 조회           | O   | ⬜   |
-| 9     | User           | **Modify User Info**             | 사용자 정보 편집           | O   | ⬜   |
-| 10    | User           | **Search Event History**         | 이벤트 이력 조회           | O   | ⬜   |
-| 11    | User           | **Update Event History**         | 이벤트 이력 업데이트         | O   | ⬜   |
-| Group |                |                                  |                     |     |     |
-| 12    | Group          | **Update Group NickName**        | 그룹 닉네임 편집           | O   | ⬜   |
-| 13    | Group          | **Search GroupId**               | 그룹 아이디 조회           | O   | ⬜   |
-| 14    | Group          | **Send Group Invitation**        | 그룹 초대               | O   | ⬜   |
-| 15    | Group          | **Search Group Invitation**      | 그룹초대 조회 (수신)        | O   | ⬜   |
-| 16    | Group          | **Search Send Group Invitation** | 그룹초대 발송 조회          | O   | ⬜   |
-| 17    | Group          | **Delete Group Invitation List** | 그룹초대 리스트 삭제         | O   | ⬜   |
-| 18    | Group          | **Result Group Invitation**      | 그룹초대 결과 입력          | O   | ⬜   |
-| 19    | Group          | **Search Group Member**          | 그룹 구성원 조회           | O   | ⬜   |
-| 20    | Group          | **Withdraw Group**               | 그룹 탈퇴               | O   | ⬜   |
-| 21    | Group          | **Delete Group Member**          | 그룹 구성원 삭제(추방)       | O   | ⬜   |
+### User API 항목
+
+- [x] **1. Join** (회원 가입) ✅ 2025-12-02
+    
+    - 인증 필요 여부: **X**
+        
+- [ ] **2. Withdrawal** (회원 탈퇴)
+    
+    - 인증 필요 여부: **O**
+        
+- [x] **3. Request TempKey** (임시 인증 번호 요청) ✅ 2025-12-02
+    
+    - 인증 필요 여부: **X**
+        
+- [x] **4. Verify TempKey** (임시인증번호 유효성 체크) ✅ 2025-12-02
+    
+    - 인증 필요 여부: **X**
+        
+- [x] **5. Find Id** (아이디 찾기) ✅ 2025-12-02
+    
+    - 인증 필요 여부: **X**
+        
+- [x] **6. Reser Password** (비밀번호 초기화) ✅ 2025-12-02
+    
+    - 인증 필요 여부: **X**
+        
+- [x] **7. Duplicate Check** (id, email, tel 중복확인) ✅ 2025-12-02
+    
+    - 인증 필요 여부: **X**
+        
+- [x] **8. Search User Info** (사용자 정보 조회) ✅ 2025-12-02
+    
+    - 인증 필요 여부: **O**
+        
+- [ ] **9. Modify User Info** (사용자 정보 편집)
+    
+    - 인증 필요 여부: **O**
+        
+- [ ] **10. Search Event History** (이벤트 이력 조회)
+    
+    - 인증 필요 여부: **O**
+        
+- [ ] **11. Update Event History** (이벤트 이력 업데이트)
+    
+    - 인증 필요 여부: **O**
+        
+
+---
+
+### Group API 항목
+
+- [ ] **12. Update Group NickName** (그룹 닉네임 편집)
+    
+    - 인증 필요 여부: **O**
+        
+- [ ] **13. Search GroupId** (그룹 아이디 조회)
+    
+    - 인증 필요 여부: **O**
+        
+- [ ] **14. Send Group Invitation** (그룹 초대)
+    
+    - 인증 필요 여부: **O**
+        
+- [ ] **15. Search Group Invitation** (그룹초대 조회 - 수신)
+    
+    - 인증 필요 여부: **O**
+        
+- [ ] **16. Search Send Group Invitation** (그룹초대 발송 조회)
+    
+    - 인증 필요 여부: **O**
+        
+- [ ] **17. Delete Group Invitation List** (그룹초대 리스트 삭제)
+    
+    - 인증 필요 여부: **O**
+        
+- [ ] **18. Result Group Invitation** (그룹초대 결과 입력)
+    
+    - 인증 필요 여부: **O**
+        
+- [ ] **19. Search Group Member** (그룹 구성원 조회)
+    
+    - 인증 필요 여부: **O**
+        
+- [ ] **20. Withdraw Group** (그룹 탈퇴)
+    
+    - 인증 필요 여부: **O**
+        
+- [ ] **21. Delete Group Member** (그룹 구성원 삭제 - 추방)
+    
+    - 인증 필요 여부: **O**
