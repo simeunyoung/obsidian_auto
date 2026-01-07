@@ -7,7 +7,8 @@ AWS
 1. Lambda
 	- [x] 운영, 개발 서버에 이벤트 보고 라우팅 람다 생성 ✅ 2025-12-16
 		- [ ] 테스트
-	- [ ] IoTCore 고아 Things 삭제 로직 개발
+	- [ ] IoTCore 고아 Things 문제로 update시 FK 에러 수정
+		- device_id 생성 후 iot_device 테이블에서 존재 여부 확인 후 진행하는 로직으로 수정
 2. DB
 	- [x] Maria DB 버전업 이슈 사항 관련 현황 SDS에 전달 ✅ 2026-01-07
 
