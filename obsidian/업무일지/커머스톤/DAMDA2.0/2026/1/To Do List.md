@@ -21,7 +21,6 @@ AWS
 - [ ] 다중 이벤트 로직 개발
 - [ ] OAuth2.0 서버 리팩토링
 
-
 정리할 내용
 - API Gateway에 {proxy+}로 경로 설정
 - OAuth2.0 서버 구축 내용(JWT Key관리)
