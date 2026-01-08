@@ -37,11 +37,11 @@
     
     - 인증 필요 여부: **O**
         
-- [ ] **10. Search Event History** (이벤트 이력 조회)
+- [x] **10. Search Event History** (이벤트 이력 조회) ✅ 2026-01-08
     
     - 인증 필요 여부: **O**
         
-- [ ] **11. Update Event History** (이벤트 이력 업데이트)
+- [x] **11. Update Event History** (이벤트 이력 업데이트) ✅ 2026-01-08
     
     - 인증 필요 여부: **O**
         
