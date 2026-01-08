@@ -35,5 +35,6 @@ AWS
 정리할 내용
 - API Gateway에 {proxy+}로 경로 설정
 - OAuth2.0 서버 구축 내용(JWT Key관리)
-- 로그 찍는 방법
+- 로그 찍는 방법 리팩토링
+- git worktree
 
