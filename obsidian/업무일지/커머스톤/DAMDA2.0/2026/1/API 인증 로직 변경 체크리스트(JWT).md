@@ -50,19 +50,19 @@
 
 ### Group API 항목
 
-- [ ] **12. Update Group NickName** (그룹 닉네임 편집)
+- [x] **12. Update Group NickName** (그룹 닉네임 편집) ✅ 2026-01-08
     
     - 인증 필요 여부: **O**
         
-- [ ] **13. Search GroupId** (그룹 아이디 조회)
+- [x] **13. Search GroupId** (그룹 아이디 조회) ✅ 2026-01-08
     
     - 인증 필요 여부: **O**
         
-- [ ] **14. Send Group Invitation** (그룹 초대)
+- [x] **14. Send Group Invitation** (그룹 초대) ✅ 2026-01-08
     
     - 인증 필요 여부: **O**
         
-- [ ] **15. Search Group Invitation** (그룹초대 조회 - 수신)
+- [x] **15. Search Group Invitation** (그룹초대 조회 - 수신) ✅ 2026-01-08
     
     - 인증 필요 여부: **O**
         
