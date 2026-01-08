@@ -66,26 +66,26 @@
     
     - 인증 필요 여부: **O**
         
-- [ ] **16. Search Send Group Invitation** (그룹초대 발송 조회)
+- [x] **16. Search Send Group Invitation** (그룹초대 발송 조회) ✅ 2026-01-08
     
     - 인증 필요 여부: **O**
         
-- [ ] **17. Delete Group Invitation List** (그룹초대 리스트 삭제)
+- [x] **17. Delete Group Invitation List** (그룹초대 리스트 삭제) ✅ 2026-01-08
     
     - 인증 필요 여부: **O**
         
-- [ ] **18. Result Group Invitation** (그룹초대 결과 입력)
+- [x] **18. Result Group Invitation** (그룹초대 결과 입력) ✅ 2026-01-08
     
     - 인증 필요 여부: **O**
         
-- [ ] **19. Search Group Member** (그룹 구성원 조회)
+- [x] **19. Search Group Member** (그룹 구성원 조회) ✅ 2026-01-08
     
     - 인증 필요 여부: **O**
         
-- [ ] **20. Withdraw Group** (그룹 탈퇴)
+- [x] **20. Withdraw Group** (그룹 탈퇴) ✅ 2026-01-08
     
     - 인증 필요 여부: **O**
         
-- [ ] **21. Delete Group Member** (그룹 구성원 삭제 - 추방)
+- [x] **21. Delete Group Member** (그룹 구성원 삭제 - 추방) ✅ 2026-01-08
     
     - 인증 필요 여부: **O**
