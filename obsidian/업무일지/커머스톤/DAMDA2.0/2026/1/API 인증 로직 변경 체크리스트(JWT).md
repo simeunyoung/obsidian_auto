@@ -93,4 +93,121 @@
 
 ---
 
-### EVENT API 항목
+### ## ACTION API
+
+- [ ]  **1. Execute Event Action** (이벤트 액션 실행)
+    
+    - URI: `POST /api/1.0/event/action/execute`
+        
+    - 인증 필요 여부: **O**
+        
+- [ ]  **2. Delete Event Action** (이벤트 액션 삭제)
+    
+    - URI: `POST /api/1.0/event/action/delete`
+        
+    - 인증 필요 여부: **O**
+        
+
+---
+
+## SCHEDULE
+
+- [ ]  **3. Search Schedule Event** (예약제어 검색)
+    
+    - URI: `POST /api/1.0/event/schedule/search`
+        
+    - 인증 필요 여부: **O**
+        
+- [ ]  **4. Add Schedule Event** (예약제어 추가)
+    
+    - URI: `POST /api/1.0/event/schedule/add`
+        
+    - 인증 필요 여부: **O**
+        
+- [ ]  **5. Update Schedule Event** (예약제어 수정)
+    
+    - URI: `POST /api/1.0/event/schedule/update`
+        
+    - 인증 필요 여부: **O**
+        
+- [ ]  **6. Delete Schedule Event** (예약제어 삭제)
+    
+    - URI: `POST /api/1.0/event/schedule/delete`
+        
+    - 인증 필요 여부: **O**
+        
+
+---
+
+## TRIGGER (RECIPE)
+
+- [ ]  **7. Search Recipe** (자동제어 레시피 검색)
+    
+    - URI: `POST /api/1.0/event/recipe/search`
+        
+    - 인증 필요 여부: **O**
+        
+- [ ]  **8. Add Recipe** (자동제어 레시피 추가)
+    
+    - URI: `POST /api/1.0/event/recipe/add`
+        
+    - 인증 필요 여부: **O**
+        
+- [ ]  **9. Delete Recipe** (자동제어 레시피 삭제)
+    
+    - URI: `POST /api/1.0/event/recipe/delete`
+        
+    - 인증 필요 여부: **O**
+        
+- [ ]  **10. Update Recipe** (자동제어 레시피 수정)
+    
+    - URI: `POST /api/1.0/event/recipe/update`
+        
+    - 인증 필요 여부: **O**
+        
+- [ ]  **11. Search Recipe List** (자동제어 레시피 리스트 검색)
+    
+    - URI: `POST /api/1.0/event/recipe/search/list`
+        
+    - 인증 필요 여부: **O**
+    
+- [ ] **17. Trigger Event** (자동제어 트리거 처리)
+	
+	  - URI: `POST /api/1.0/event/trigger`
+	
+	  - 인증 필요 여부: X
+
+
+---
+
+## BATCHCONTROL
+
+- [ ]  **12. Search Batch Control** (원버튼 검색)
+    
+    - URI: `POST /api/1.0/event/batchcontrol/search`
+        
+    - 인증 필요 여부: **O**
+        
+- [ ]  **13. Add Batch Control** (원버튼 추가)
+    
+    - URI: `POST /api/1.0/event/batchcontrol/add`
+        
+    - 인증 필요 여부: **O**
+        
+- [ ]  **14. Delete Batch Control** (원버튼 삭제)
+    
+    - URI: `POST /api/1.0/event/batchcontrol/delete`
+        
+    - 인증 필요 여부: **O**
+        
+- [ ]  **15. Update Batch Control** (원버튼 수정)
+    
+    - URI: `POST /api/1.0/event/batchcontrol/update`
+        
+    - 인증 필요 여부: **O**
+        
+- [ ]  **16. Search Batch Control List** (원버튼 생성 화면 리스트 조회)
+    
+    - URI: `POST /api/1.0/event/batchcontrol/search/list`
+        
+    - 인증 필요 여부: **O**
