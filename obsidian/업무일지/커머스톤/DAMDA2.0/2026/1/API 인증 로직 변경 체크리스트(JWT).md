@@ -5,7 +5,7 @@
     
     - 인증 필요 여부: **X**
         
-- [ ] **2. Withdrawal** (회원 탈퇴)
+- [x] **2. Withdrawal** (회원 탈퇴) ✅ 2026-01-12
     
     - 인증 필요 여부: **O**
         
@@ -93,7 +93,7 @@
 
 ---
 
-### ## ACTION API
+### ACTION API
 
 - [x] **1. Execute Event Action** (이벤트 액션 실행) ✅ 2026-01-09
     
@@ -110,7 +110,7 @@
 
 ---
 
-## SCHEDULE
+### SCHEDULE
 
 - [ ]  **3. Search Schedule Event** (예약제어 검색)
     
