@@ -112,34 +112,34 @@
 
 ### SCHEDULE
 
-- [ ]  **3. Search Schedule Event** (예약제어 검색)
+- [x] **3. Search Schedule Event** (예약제어 검색) ✅ 2026-01-12
     
     - URI: `POST /api/1.0/event/schedule/search`
         
-    - 인증 필요 여부: **O**
+    - 인증 필요 여부: UserId가 필요없음 
         
-- [ ]  **4. Add Schedule Event** (예약제어 추가)
+- [x] **4. Add Schedule Event** (예약제어 추가) ✅ 2026-01-12
     
     - URI: `POST /api/1.0/event/schedule/add`
         
-    - 인증 필요 여부: **O**
+    - 인증 필요 여부: UserId가 필요없음 
         
-- [ ]  **5. Update Schedule Event** (예약제어 수정)
+- [x] **5. Update Schedule Event** (예약제어 수정) ✅ 2026-01-12
     
     - URI: `POST /api/1.0/event/schedule/update`
         
-    - 인증 필요 여부: **O**
+    - 인증 필요 여부: UserId가 필요없음 
         
-- [ ]  **6. Delete Schedule Event** (예약제어 삭제)
+- [x] **6. Delete Schedule Event** (예약제어 삭제) ✅ 2026-01-12
     
     - URI: `POST /api/1.0/event/schedule/delete`
         
-    - 인증 필요 여부: **O**
+    - 인증 필요 여부: UserId가 필요없음 
         
 
 ---
 
-## TRIGGER (RECIPE)
+### TRIGGER (RECIPE)
 
 - [ ]  **7. Search Recipe** (자동제어 레시피 검색)
     
