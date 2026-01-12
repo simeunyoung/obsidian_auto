@@ -180,7 +180,7 @@
 
 ---
 
-## BATCHCONTROL
+### BATCHCONTROL
 
 - [ ]  **12. Search Batch Control** (원버튼 검색)
     
