@@ -182,32 +182,32 @@
 
 ### BATCHCONTROL
 
-- [ ]  **12. Search Batch Control** (원버튼 검색)
+- [x] **12. Search Batch Control** (원버튼 검색) ✅ 2026-01-13
     
     - URI: `POST /api/1.0/event/batchcontrol/search`
         
     - 인증 필요 여부: **O**
         
-- [ ]  **13. Add Batch Control** (원버튼 추가)
+- [x] **13. Add Batch Control** (원버튼 추가) ✅ 2026-01-13
     
     - URI: `POST /api/1.0/event/batchcontrol/add`
         
     - 인증 필요 여부: **O**
         
-- [ ]  **14. Delete Batch Control** (원버튼 삭제)
+- [x] **14. Delete Batch Control** (원버튼 삭제) ✅ 2026-01-13
     
     - URI: `POST /api/1.0/event/batchcontrol/delete`
         
-    - 인증 필요 여부: **O**
+    - 인증 필요 여부: X
         
-- [ ]  **15. Update Batch Control** (원버튼 수정)
+- [x] **15. Update Batch Control** (원버튼 수정) ✅ 2026-01-13
     
     - URI: `POST /api/1.0/event/batchcontrol/update`
         
-    - 인증 필요 여부: **O**
+    - 인증 필요 여부: X
         
-- [ ]  **16. Search Batch Control List** (원버튼 생성 화면 리스트 조회)
+- [x] **16. Search Batch Control List** (원버튼 생성 화면 리스트 조회) ✅ 2026-01-13
     
     - URI: `POST /api/1.0/event/batchcontrol/search/list`
         
-    - 인증 필요 여부: **O**
+    - 인증 필요 여부: X
