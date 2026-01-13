@@ -116,60 +116,60 @@
     
     - URI: `POST /api/1.0/event/schedule/search`
         
-    - 인증 필요 여부: UserId가 필요없음 
+    - 인증 필요 여부: X
         
 - [x] **4. Add Schedule Event** (예약제어 추가) ✅ 2026-01-12
     
     - URI: `POST /api/1.0/event/schedule/add`
         
-    - 인증 필요 여부: UserId가 필요없음 
+    - 인증 필요 여부: X
         
 - [x] **5. Update Schedule Event** (예약제어 수정) ✅ 2026-01-12
     
     - URI: `POST /api/1.0/event/schedule/update`
         
-    - 인증 필요 여부: UserId가 필요없음 
+    - 인증 필요 여부: X
         
 - [x] **6. Delete Schedule Event** (예약제어 삭제) ✅ 2026-01-12
     
     - URI: `POST /api/1.0/event/schedule/delete`
         
-    - 인증 필요 여부: UserId가 필요없음 
+    - 인증 필요 여부: X
         
 
 ---
 
 ### TRIGGER (RECIPE)
 
-- [ ]  **7. Search Recipe** (자동제어 레시피 검색)
+- [x] **7. Search Recipe** (자동제어 레시피 검색) ✅ 2026-01-13
     
     - URI: `POST /api/1.0/event/recipe/search`
         
-    - 인증 필요 여부: **O**
+    - 인증 필요 여부: X
         
-- [ ]  **8. Add Recipe** (자동제어 레시피 추가)
+- [x] **8. Add Recipe** (자동제어 레시피 추가) ✅ 2026-01-13
     
     - URI: `POST /api/1.0/event/recipe/add`
         
     - 인증 필요 여부: **O**
         
-- [ ]  **9. Delete Recipe** (자동제어 레시피 삭제)
+- [x] **9. Delete Recipe** (자동제어 레시피 삭제) ✅ 2026-01-13
     
     - URI: `POST /api/1.0/event/recipe/delete`
         
-    - 인증 필요 여부: **O**
+    - 인증 필요 여부: X
         
-- [ ]  **10. Update Recipe** (자동제어 레시피 수정)
+- [x] **10. Update Recipe** (자동제어 레시피 수정) ✅ 2026-01-13
     
     - URI: `POST /api/1.0/event/recipe/update`
         
-    - 인증 필요 여부: **O**
+    - 인증 필요 여부: X
         
-- [ ]  **11. Search Recipe List** (자동제어 레시피 리스트 검색)
+- [x] **11. Search Recipe List** (자동제어 레시피 리스트 검색) ✅ 2026-01-13
     
     - URI: `POST /api/1.0/event/recipe/search/list`
         
-    - 인증 필요 여부: **O**
+    - 인증 필요 여부: X
     
 - [x] **17. Trigger Event** (자동제어 트리거 처리) ✅ 2026-01-09
 	
