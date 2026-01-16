@@ -81,3 +81,15 @@
 3. OIDC 활성화(`oidc()`)유지
 4. TokenCustomizer로 access_token/ id_token에 필요한 claims 주입
 5. logout은 refresh token revoke 및 필요 데이터 삭제 확인 후 로직 /logout api 생성
+
+
+## 추가
+
+PKCE 설정 활성화
+- Authorization Code가 탈취돼도, 진짜 앱만 토큰으로 교환할 수 있게 만드는 잠금장치
+
+모바일/WebView 환경에서 PKCE 설정 비활성화 되어있음.
+authorization code 탈취 공격에 취약해, PKCE 설정 활성화.
+	앱에서 `/oauth2/authorize` 요청 시 필요한 값
+		- `code_challenge`
+		- `code_challenge_method=S256`
