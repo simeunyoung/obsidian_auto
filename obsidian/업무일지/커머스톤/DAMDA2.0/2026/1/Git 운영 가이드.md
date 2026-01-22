@@ -79,18 +79,16 @@ git checkout -b feature/기능명`
 > **작업 브랜치는 develop에서 생성한다.  
 > `--no-ff` merge로 기록을 남기고, merge 후 삭제한다.  
 > 각 서버는 자기 브랜치만 single-branch로 pull한다.**
-> commit mesage 규칙은 Verb-based Commit Message Rules을 따른다.
+> commit mesage 규칙은 Conventional Commits Rules을 따른다.
 
 
-#### Verb-based Commit Message Rules
+## Commit Type Rules (Conventional)
 
-| Verb         | 의미            | 사용 시점            |
-| ------------ | ------------- | ---------------- |
-| **add**      | 신규 기능 / 신규 코드 | 기능 처음 구현         |
-| **update**   | 기능 변경 / 개선    | 기존 로직 수정         |
-| **delete**   | 기능/코드 제거      | 더 이상 안 쓰는 코드     |
-| **fix**      | 버그 수정         | 의도와 다른 동작        |
-| **refactor** | 구조 개선         | 동작 변화 없음         |
-| **config**   | 설정 변경         | yml, gradle, env |
-| **docs**     | 문서            | README, 주석       |
-| **test**     | 테스트           | 테스트 코드           |
+| type         | 의미       | 사용 시점                        |
+| ------------ | -------- | ---------------------------- |
+| **feat**     | Feature  | 사용자 기능 추가 / 변경               |
+| **fix**      | Bug Fix  | 버그 수정                        |
+| **refactor** | Refactor | 동작 변화 없는 구조 개선               |
+| **chore**    | Chore    | 설정 / 정책 / 빌드 / 리팩토링 (로그백 포함) |
+| **docs**     | Docs     | 문서 작성 / 수정                   |
+| **test**     | Test     | 테스트 코드 추가 / 수정               |
