@@ -31,10 +31,12 @@
 
 ### 4.1 기능 개발
 
-`git checkout develop
+```
+git checkout develop 
 git fetch origin 
 git pull 
-git checkout -b feature/기능명`
+git checkout -b feature/브랜치명
+```
 
 ### 4.2 develop 브랜치에 머지
 
@@ -82,13 +84,14 @@ git checkout -b feature/기능명`
 > commit mesage 규칙은 Conventional Commits Rules을 따른다.
 
 
+
 ## Commit Type Rules (Conventional)
 
-| type         | 의미       | 사용 시점                        |
-| ------------ | -------- | ---------------------------- |
-| **feat**     | Feature  | 사용자 기능 추가 / 변경               |
-| **fix**      | Bug Fix  | 버그 수정                        |
-| **refactor** | Refactor | 동작 변화 없는 구조 개선               |
-| **chore**    | Chore    | 설정 / 정책 / 빌드 / 리팩토링 (로그백 포함) |
-| **docs**     | Docs     | 문서 작성 / 수정                   |
-| **test**     | Test     | 테스트 코드 추가 / 수정               |
+| type         | 의미       | 사용 시점               |
+| ------------ | -------- | ------------------- |
+| **feat**     | Feature  | 사용자 기능 추가 / 변경      |
+| **fix**      | Bug Fix  | 버그 수정               |
+| **refactor** | Refactor | 동작 변화 없는 구조 개선      |
+| **chore**    | Chore    | 설정 / 정책 / 빌드 / 리팩토링 |
+| **docs**     | Docs     | 문서 작성 / 수정          |
+| **test**     | Test     | 테스트 코드 추가 / 수정      |
