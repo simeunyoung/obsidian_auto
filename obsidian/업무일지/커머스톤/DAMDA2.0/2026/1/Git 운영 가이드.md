@@ -78,7 +78,7 @@ git checkout -b feature/브랜치명
 ## 7. 팀 규칙 요약
 
 > **작업 브랜치는 develop에서 생성한다.  
-> `--no-ff`/squash merge로 기록을 남기고, merge 후 삭제한다.  
+> `--no-ff 로 기록을 남기고, merge 후 삭제한다.  
 > 각 서버는 자기 브랜치만 single-branch로 pull한다.**
 > commit mesage 규칙은 Conventional Commits Rules을 따른다.
 
