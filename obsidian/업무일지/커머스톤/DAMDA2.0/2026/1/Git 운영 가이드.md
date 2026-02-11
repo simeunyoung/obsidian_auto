@@ -40,8 +40,9 @@ git checkout -b feature/브랜치명
 
 ### 4.2 develop 브랜치에 머지
 
-- **`--no-ff` 방식으로 merge**
-- merge commit으로 기능 단위 기록을 남긴다
+1. **`--no-ff` 방식으로 merge**
+2. git merge --squash feature/xxx
+
 
 ### 4.3 작업 브랜치 삭제
 
@@ -79,7 +80,7 @@ git checkout -b feature/브랜치명
 ## 7. 팀 규칙 요약
 
 > **작업 브랜치는 develop에서 생성한다.  
-> `--no-ff` merge로 기록을 남기고, merge 후 삭제한다.  
+> `--no-ff`/squash merge로 기록을 남기고, merge 후 삭제한다.  
 > 각 서버는 자기 브랜치만 single-branch로 pull한다.**
 > commit mesage 규칙은 Conventional Commits Rules을 따른다.
 
