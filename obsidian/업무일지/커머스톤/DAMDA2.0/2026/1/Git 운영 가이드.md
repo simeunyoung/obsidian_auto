@@ -41,8 +41,6 @@ git checkout -b feature/브랜치명
 ### 4.2 develop 브랜치에 머지
 
 1. **`--no-ff` 방식으로 merge**
-2. git merge --squash feature/xxx
-
 
 ### 4.3 작업 브랜치 삭제
 
