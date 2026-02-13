@@ -45,7 +45,13 @@ git checkout -b feature/브랜치명
 ### 4.3 작업 브랜치 삭제
 
 - GitHub: merge 후 `Delete branch`
-- 로컬:  `git branch -d feature/기능명 git fetch -p`
+- 로컬:  ```
+  ```
+		git branch --merged develop
+		git push origin --delete 브랜치명
+		git branch -d 브랜치명
+		git fetch -p
+	```
 
 #### 4.4. 부분 반영이 필요한 경우 (cherry-pick)
 
