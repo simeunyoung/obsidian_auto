@@ -100,3 +100,5 @@ git checkout -b feature/브랜치명
 | **chore**    | Chore    | 설정 / 정책 / 빌드 / 리팩토링 |
 | **docs**     | Docs     | 문서 작성 / 수정          |
 | **test**     | Test     | 테스트 코드 추가 / 수정      |
+
+---
