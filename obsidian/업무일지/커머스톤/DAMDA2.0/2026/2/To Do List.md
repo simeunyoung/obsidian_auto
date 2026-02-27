@@ -6,6 +6,9 @@ Project: DAMDA2.0
 AWS
 1. Lambda
 	- [ ] 자격 증명 env 저장
+- [ ] ssh dcm 접속 안된던 이유확인
+- [ ] dcm dsim 로그정리
+- [ ] 내부 인원 외 iam 계정 삭제
 
 보안 점검
 - [ ] 클라우드 보안 취약 사항 SDS 정책과 검토 후 조치 예정
