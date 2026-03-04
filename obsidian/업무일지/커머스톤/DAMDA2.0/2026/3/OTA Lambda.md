@@ -25,4 +25,6 @@
 - handle_add_thing_to_group(detail, conn)
 	- CloudTrail의 AddThingToThingGroup 이벤트를 받아 “신규 등록 디바이스”를 OTA 대상에 바로 올림(QUEUED 생성)
 - handle_delete_job(detail, conn)
-- handle_delete_job(detail, conn)
+	- CloudTrail의 **DeleteJob 이벤트** 처리 → `iot_model_firmware`에서 해당 job_id 제거
+- lambda_handler(event, context)
+	- 들어온 이벤트를 보고 어떤 핸들러를 실행할지 라우팅 + 예외/rollback/close 관리
