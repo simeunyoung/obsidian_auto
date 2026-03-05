@@ -19,7 +19,7 @@
 - get_latest_active_model_firmware_id(conn, manufacture, model)
 	- 해당 제조사/모델에 대해 현재 진행 중(rolling)인 firmware job의 model_firmware_id(iot_model_firmware.id) 를 찾음
 - handle_create_job(detail, conn)
-	- CloudTrail의 reateJob 이벤트를 받아 `iot_model_firmware`에 “잡 메타”를 저장
+	- CloudTrail의 createJob 이벤트를 받아 `iot_model_firmware`에 “잡 메타”를 저장
 - ensure_queued_row_no_unique(conn, device_id, model_firmware_id)
 	- `iot_device_firmware`에 초기 상태(QUEUED) row를 생성
 - handle_add_thing_to_group(detail, conn)
