@@ -14,10 +14,15 @@ AWS
 - [ ] 앱/웹 보안 취약 사항 검토 및 수정 (~25.12)
 	- [ ] 3-2-6. Firebase API 키 재발급
 
-서버
+서버 (⭐⭐개발, 수요, 운영 확인 필수⭐⭐)
+1. DCM
+	- [ ] OTA  /check IN_PROGRESS -> QUEUED로 변경
+	- [ ] /validate Json Null error 내용 로그 찍고 해결
+	- [x] .idea, .gradle git 추적 충돌 해결 ✅ 2026-03-10
+	- [x] 서버에서 git pull 충돌 해결 ✅ 2026-03-10
 
 
-수요기업
+수요 기업
 
 ---
 
