@@ -32,6 +32,7 @@ AWS
 - 로그 찍는 방법 리팩토링
 - git worktree
 - 서버에 서비스 실행할 때 systemctl에서 관리하게 하기
+- git ssh key
 
 사용해보기
 - 오픈클로
