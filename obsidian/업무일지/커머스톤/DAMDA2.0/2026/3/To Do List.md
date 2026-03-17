@@ -20,6 +20,9 @@ AWS
 	- [ ] /validate Json Null error 내용 로그 찍고 해결
 	- [x] .idea, .gradle git 추적 충돌 해결 ✅ 2026-03-10
 	- [x] 서버에서 git pull 충돌 해결 ✅ 2026-03-10
+	- [ ] 가등록 완료 시 상태 변경 (P)
+	- [ ] 등록 완료 시 상태 변경 (R)
+	- [ ] /info/search 상태 추가 반환
 
 
 수요 기업
