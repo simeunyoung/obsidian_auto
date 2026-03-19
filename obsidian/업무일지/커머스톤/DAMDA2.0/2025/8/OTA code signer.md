@@ -4,6 +4,9 @@ Project: DAMDA2.0
 ---
 ---
 
+- 개발, 수요, 운영 별로 관리
+- 기업 별로 관리
+
 - AWS IoT OTA(Over-the-Air)
 	- DEVICE에 새로운 펌웨어를 안전하게 전송하는 기능
 
@@ -211,4 +214,12 @@ aws signer put-signing-profile \
         }
     ]
 }
+```
+
+
+
+---
+- public key 추출
+```
+openssl ec -in ecdsasigner.key -pubout -out ecdsasigner_pub.pem
 ```
