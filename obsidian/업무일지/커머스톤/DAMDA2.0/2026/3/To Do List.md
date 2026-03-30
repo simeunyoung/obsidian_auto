@@ -26,7 +26,10 @@ AWS
 		- [ ] 등록 완료 시 상태 변경 (R)
 		- [ ] /info/search 상태 R일 경우만 반환
 	- [ ]  내부 서비스 호출 구조 Public → Internal 전환
-	- [x] OTA check MCU/ESP32 구분 반환 ✅ 2026-03-27
+	- [ ] OTA check MCU/ESP32 구분 반환
+		- [x] 개발 ✅ 2026-03-30
+		- [ ] 수요
+		- [ ] 운영
 2. DSIM(수요기업)
 	- [x] 브랜치가 아닌 커밋을 가져와서 빌드중 > 브랜치로 변경해야함 ✅ 2026-03-18
 수요 기업
@@ -40,6 +43,3 @@ AWS
 - git worktree
 - 서버에 서비스 실행할 때 systemctl에서 관리하게 하기
 - git ssh key
-
-사용해보기
-- 오픈클로
