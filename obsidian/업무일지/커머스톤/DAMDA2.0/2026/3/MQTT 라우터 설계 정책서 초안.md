@@ -1,3 +1,5 @@
+
+# 초안
 ## 1. 개요
 
 SmartThings 디바이스 동기화를 위한 MQTT 라우터 서비스 설계 정책
@@ -359,3 +361,73 @@ CPU     : 낮음  (JSON 파싱 정도)
    → 공유 구독으로 브로커 레벨에서 분배
    → client-id 인스턴스별 고유값 필수
 ```
+
+
+
+---
+# 개선
+## 12.1 핵심 개선 방향
+
+- DB 직접 조회 구조 → **Redis 조회 우선 구조로 변경**
+- 병렬 처리 → **제어된 수준 유지 (ThreadPool 튜닝)**
+- 외부 서버 호출 → **Connection Pool + Timeout 적용**
+- MQTT QoS1 → **중복 처리 대응 필요**
+
+---
+
+## 12.2 개선 아키텍처
+
+MQTT  
+  ↓  
+EC2 (구독)  
+  ↓  
+ThreadPool (내부 큐)  
+  ↓  
+Redis (등록 여부 조회)  
+  ↓  
+(필요 시) DB fallback  
+  ↓  
+HTTP 전송 (Pool 제한)
+
+---
+
+## 12.3 핵심 포인트
+
+### 1) Redis 조회 구조
+
+- DB 대신 Redis로 존재 여부 확인
+- 등록/삭제 시 Redis 즉시 갱신
+
+---
+
+### 2) 병렬 처리 제한
+
+- Thread 수는 DB보다 약간 많게 (1.2~1.5배)
+- 과도한 병렬 → DB 대기 증가
+
+---
+
+### 3) HTTP 호출 보호
+
+- connection pool 제한
+- timeout 설정 필수
+
+---
+
+### 4) Rejected 정책
+
+- `CallerRunsPolicy` 지양
+- drop/log 또는 별도 처리 권장
+
+---
+
+### 5) 중복 메시지 대응
+
+- QoS1 → 중복 가능
+- messageId 기반 idempotent 처리
+
+---
+
+## 12.4 결론
+
+👉 **DB 부하 줄이고, 병렬을 통제하는 게 핵심**
