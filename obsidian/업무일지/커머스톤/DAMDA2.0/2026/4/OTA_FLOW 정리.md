@@ -9,7 +9,7 @@
 - APP은 AWS IoT Jobs를 직접 호출하지 않는다.
 - DCM은 디바이스에 `write/json` 메시지를 보내 OTA 시작 트리거만 준다.
 - 실제 AWS IoT Jobs의 `start-next`, `update` 처리는 디바이스가 수행한다.
-- 서버 DB의 `iot_device_firmware.update_status`는 `QUEUED / IN_PROGRESS / COMPLETED / FAILED` 상태를 가진다.
+- 서버 DB의 `iot_device_firmware.update_status`는 `QUEUED / SUCCESSED / FAILED` 상태를 가진다.
 
 ---
 
@@ -99,8 +99,8 @@ APP이 OTA 시작 API를 호출한다.
 
 ```json
 {
-  "account": { },
-  "did": "manufacture-model-serial",
+  "account": "",
+  "device_id": "manufacture-model-serial",
   "job_type": "MCU"
 }
 ```
@@ -120,28 +120,6 @@ APP이 OTA 시작 API를 호출한다.
 5. `job_type` 기준 활성 펌웨어 조회
 6. MQTT payload 생성
 7. `{deviceType}/sync/iot-server/{clientId}/write/json` 로 publish
-
-코드상 핵심 조회:
-
-```java
-IotModelFirmware iotModelFirmware = iotModelFirmwareRepository
-    .findTopByDeviceModelIdAndCompletedAndJobTypeOrderByIdDesc(
-        iotDeviceModel.getId(), false, otaStartRequestDto.getJob_type())
-    .orElse(null);
-```
-
-주의사항:
-- 요청의 `job_type` 값이 DB 값과 일치하지 않으면 조회 실패한다.
-- DB에 `ESP32`로 저장되어 있는데 요청이 `esp32`로 오면 환경에 따라 조회가 실패할 수 있으므로 서버에서 대문자 정규화가 안전하다.
-
-권장 예:
-
-```java
-String jobType = otaStartRequestDto.getJob_type();
-if (jobType != null) {
-    jobType = jobType.toUpperCase();
-}
-```
 
 ---
 
@@ -165,20 +143,13 @@ if (jobType != null) {
     "e": [
       {
         "n": "/3/0/3",
-        "sv": "1.2.3"
+        "sv": "1"
       }
     ]
   }
 }
 ```
 
-의미:
-- `sid`: 요청 식별용 세션 ID
-- `did`: 디바이스 ID
-- `cid`: MQTT client ID
-- `msg.o = w`: write 요청
-- `msg.e[0].n = /3/0/3`: 버전 관련 리소스 URI
-- `msg.e[0].sv`: 배포할 펌웨어 버전
 
 즉, DCM은 디바이스에 **"이 버전으로 OTA 진행해라"** 라는 트리거를 주는 역할이다.
 
@@ -531,53 +502,6 @@ Jobs reserved topic에 대한 권한이 포함되어야 한다.
 ### 11.4 알림을 놓친 경우
 디바이스가 offline 상태였다가 나중에 접속하면 알림을 놓칠 수 있다.
 그래서 연결 직후 `GetPendingJobExecutions`, `$next`, `start-next` 등의 직접 조회/요청이 필요하다.
-
----
-
-## 12. API/DTO 관련 주의사항
-
-### 12.1 요청 필드명
-현재 DTO:
-
-```java
-public class OtaStartRequestDto {
-    AccountRequestDto account;
-    String did;
-    String job_type;
-}
-```
-
-따라서 현재 JSON 요청은 다음처럼 보내야 한다.
-
-```json
-{
-  "did": "manufacture-model-serial",
-  "job_type": "MCU"
-}
-```
-
-즉, 현재 구조에서는 **`job_type` 스네이크 케이스**가 맞다.
-
-### 12.2 job_type 대소문자
-DB 값이 `MCU`, `ESP32` 라면 요청도 동일하게 맞추는 것이 안전하다.
-권장 처리:
-
-```java
-jobType = jobType.toUpperCase();
-```
-
-### 12.3 DB collation 확인
-대소문자 구분 여부는 DB collation에 따라 달라질 수 있다.
-확인 예:
-
-```sql
-SHOW VARIABLES LIKE 'collation%';
-SHOW FULL COLUMNS FROM iot_model_firmware;
-SELECT * FROM iot_model_firmware WHERE job_type = 'esp32';
-```
-
-현재 `*_ci` 계열 collation이면 일반적으로 대소문자 구분은 하지 않는다.
-그래도 애플리케이션 레벨에서 정규화하는 것이 안전하다.
 
 ---
 
