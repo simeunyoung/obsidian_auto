@@ -65,12 +65,12 @@ seo최적화 1회 직후
 
 ### 중간 우선순위 (1개월 내)
 
-|#|문제|내용|
-|---|---|---|
-|6|**Person / LocalBusiness 스키마 없음**|"진부장" Person 스키마 + 로컬 비즈니스 스키마 추가하면 로컬 SEO 강화|
-|7|**Organization 스키마에 sameAs 없음**|카카오, 텔레그램 등 소셜 계정을 `sameAs` 필드로 추가 가능|
-|8|**favicon 명시적 선언 미확인**|Astro가 자동으로 처리할 수 있지만, `<link rel="icon">` 명시 권장|
-|9|**preconnect 없음**|GA, KakaoTalk API 등 외부 도메인 preconnect 미적용 → 초기 로딩 미세 지연|
+| #   | 문제                                | 내용                                                      |
+| --- | --------------------------------- | ------------------------------------------------------- |
+| 6   | **Person / LocalBusiness 스키마 없음** | "진부장" Person 스키마 + 로컬 비즈니스 스키마 추가하면 로컬 SEO 강화           |
+| 7   | **Organization 스키마에 sameAs 없음**   | 카카오, 텔레그램 등 소셜 계정을 `sameAs` 필드로 추가 가능                   |
+| 8   | **favicon 명시적 선언 미확인**            | Astro가 자동으로 처리할 수 있지만, `<link rel="icon">` 명시 권장        |
+| 9   | **preconnect 없음**                 | GA, KakaoTalk API 등 외부 도메인 preconnect 미적용 → 초기 로딩 미세 지연 |
 
 ### 낮은 우선순위 (장기)
 
