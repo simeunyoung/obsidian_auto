@@ -6,7 +6,7 @@ Project: DAMDA2.0
 AWS
 1. Lambda
 	- [ ] 자격 증명 env 저장
-	- [ ] router code 전달하기
+	- [x] router code 전달하기 ✅ 2026-04-08
 
 2.  LB
 	- [ ] EM API 호출 내부로 변경 (NLB)
